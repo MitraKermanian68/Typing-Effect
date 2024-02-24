@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(./image.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.wrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #efefef;
+    width: 550px;
+    min-height: 250px;
+    padding: 50px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+}
+
+.wrapper h1{
+    display: inline;
+}
+
+.auto-input ::after{
+    content: '_';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.typed-cursor{
+    display: none;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Effect</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>
+        50,000 Subscribers !!
+        <p class="auto-input"></p>
+      </h1>
+    </div>
+
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["<i>Thank you to all my subscribers</i>", "<i>50,000 subscribers family</i>","<i>Keep watching and learning</i>" ],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
